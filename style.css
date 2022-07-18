@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  background-color: white;
+  padding: 20px 100px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.headernav {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  height: 60px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+header a:hover {
+  border-bottom: solid 3px hsl(192, 70%, 51%);
+}
+.headerbutton,
+.topconbutton,
+.rightfooter button {
+  height: 42px;
+  width: 170px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  background-image: linear-gradient(
+    45deg,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  background-size: 400% 400%;
+  position: relative;
+  border: none;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.headerbutton:hover,
+.topconbutton:hover,
+.rightfooter button:hover {
+  background-image: linear-gradient(
+    45deg,
+    hsl(136, 65%, 67%),
+    hsl(192, 64%, 65%)
+  );
+  cursor: pointer;
+}
+
+.topcon {
+  height: 440px;
+  width: 100%;
+  padding-left: 120px;
+
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right -170px top -150px;
+  background-size: 60%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.contenttop {
+  padding-top: 100px;
+  padding-right: 55px;
+  width: 500px;
+}
+.nextgen {
+  color: hsl(233, 26%, 24%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+.takeyour {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin-right: 55px;
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 20px;
+}
+.topconbutton,
+.rightfooter button {
+  height: 36px;
+  width: 140px;
+  font-size: 11px;
+}
+
+.rightimage {
+  position: relative;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.secondcon {
+  width: 100%;
+  height: 455px;
+  background-color: hsl(220, 16%, 96%);
+  z-index: 0;
+  padding-left: 120px;
+  padding-right: 100px;
+}
+.whychoose {
+  padding-top: 70px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.leverage {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: hsl(233, 8%, 62%);
+  width: 550px;
+  margin-bottom: 50px;
+}
+.iconimage {
+  margin-bottom: 20px;
+}
+
+.fourhead {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 15px;
+}
+.fourcontents {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: hsl(233, 8%, 62%);
+  width: 202.5px;
+}
+.thirdbigcon {
+  display: flex;
+  justify-content: space-between;
+}
+.bottomcon {
+  width: 100%;
+  height: 500px;
+  background-color: hsl(0, 0%, 98%);
+  padding-left: 120px;
+  padding-right: 100px;
+  padding-top: 55px;
+}
+.latest {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.articlecon {
+  height: 330px;
+  width: 220px;
+  background-color: white;
+  border-radius: 6px;
+}
+.articlecon img {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.allarticles {
+  display: flex;
+  justify-content: space-between;
+}
+.author {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(233, 8%, 62%);
+  font-size: 9px;
+}
+.articlehead {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+  font-size: 15px;
+}
+.articlehead:hover {
+  cursor: pointer;
+  color: hsl(136, 65%, 51%);
+}
+.articlewords {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 17px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(233, 8%, 62%);
+  font-size: 11.5px;
+}
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: hsl(233, 26%, 24%);
+  padding-top: 35px;
+  padding-left: 120px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.socialcon {
+  margin-top: 40px;
+}
+.socialicons {
+  height: 10px;
+  width: 10px;
+  color: white;
+  margin-right: 11px;
+}
+.socialicons:hover {
+  cursor: pointer;
+  color: hsl(136, 65%, 51%);
+}
+.smallfooter {
+  display: flex;
+  gap: 120px;
+}
+
+.about p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: hsl(220, 16%, 96%);
+  font-size: 11px;
+  line-height: 2.4;
+}
+.about p:hover {
+  cursor: pointer;
+  color: hsl(136, 65%, 51%);
+}
+.rightfooter button {
+  margin-left: 17px;
+}
+.rightfooter p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(233, 8%, 62%);
+  font-size: 11px;
+  margin-top: 28px;
+}
