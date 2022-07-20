@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headernav {
+  display: none;
+}
+.headerbutton {
+  display: none;
+}
+header {
+  height: 55px;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: white;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.hamburger-icon {
+  /* position: relative;
+  margin-left: 10px; */
+}
+.hamburger-icon label::before {
+  border-bottom: 0.125em solid black;
+  border-top: 0.375em double black;
+  /* bottom: 1.1875em; */
+  content: "";
+  height: 0.125em;
+  position: absolute;
+  top: 25px;
+  right: 1em;
+  width: 2em;
+}
+.topcon {
+  height: 900px;
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  /* background-position: right -20px; */
+  position: relative;
+  top: -160px;
+  background-size: 110%;
+  margin-bottom: 15px;
+}
+.topright {
+  background: url(images/image-mockups.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 540px;
+  width: 450px;
+  margin: 1px auto;
+}
+.contenttop {
+  width: 350px;
+  margin: 50px auto;
+}
+.nextgen {
+  color: hsl(233, 26%, 24%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.takeyour {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: hsl(233, 8%, 62%);
+  text-align: center;
+  margin-bottom: 25px;
+}
+.topconbutton,
+.rightfooter button {
+  height: 36px;
+  width: 140px;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 32%;
+  background-image: linear-gradient(
+    45deg,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  background-size: 400% 400%;
+  position: relative;
+  border: none;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

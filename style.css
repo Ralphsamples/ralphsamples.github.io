@@ -20,6 +20,9 @@ header {
   gap: 30px;
   list-style: none;
 }
+.hamburger-icon {
+  display: none;
+}
 
 header a {
   text-decoration: none;
@@ -94,6 +97,7 @@ header a:hover {
   padding-top: 100px;
   padding-right: 55px;
   width: 500px;
+  order: 1;
 }
 .nextgen {
   color: hsl(233, 26%, 24%);
@@ -117,12 +121,19 @@ header a:hover {
   font-size: 11px;
 }
 
-.rightimage {
-  position: relative;
+.topright {
+  background: url(images/image-mockups1.png);
+  height: 540px;
+  width: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
   z-index: 1;
   position: relative;
   top: 0;
   right: 0;
+  order: 2;
 }
 .secondcon {
   width: 100%;
