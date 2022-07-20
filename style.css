@@ -37,6 +37,9 @@ header a {
 header a:hover {
   border-bottom: solid 3px hsl(192, 70%, 51%);
 }
+.headerimg:hover {
+  border: none;
+}
 .headerbutton,
 .topconbutton,
 .rightfooter button {
